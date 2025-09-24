@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CattyRun 🐱</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #FFD700, #FF69B4);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.5);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #FF4500;
+        }
+
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        section h2 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px #000;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background-color: #FF4500;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #FF6347;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0,0,0,0.5);
+            padding: 1rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.3);
+            padding: 2rem;
+            border-radius: 20px;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            font-family: 'Fredoka One', cursive;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>CattyRun 🐱</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#modes">Modes</a>
+            <a href="#shop">Shop</a>
+            <a href="#guide">Guide</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to CattyRun!</h2>
+        <p>The playground game that’s 301% fun 🤩! Run, dodge, and become the ultimate Catty.</p>
+        <a href="#guide" class="btn">View Guide</a>
+    </section>
+
+    <!-- Modes Section -->
+    <section id="modes">
+        <h2>Game Modes</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Normal Mode</h3>
+                <p>Play with mods, use Homie Places 🏠, and shop for items. Fun and easy!</p>
+            </div>
+            <div class="card">
+                <h3>Survival Mode</h3>
+                <p>No mods, no Homie Places. Buy food 🍎 and survive while avoiding Catty!</p>
+            </div>
+            <div class="card">
+                <h3>Hardcore Mode</h3>
+                <p>One life ❤️, survival rules apply. One hit and you’re out!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2>Shop Items</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Skins 🎨</h3>
+                <p>Change your character to your favorite from any world!</p>
+            </div>
+            <div class="card">
+                <h3>Mods ✨</h3>
+                <p>Custom Mod, Admin Commands, Hacker Commands, KartMod, P0RTALS, Sandbox, Underground Story.</p>
+            </div>
+            <div class="card">
+                <h3>Food & Equipment 🍎⚔️</h3>
+                <p>Buy food for survival or battle items for survival and hardcore modes.</p>
+            </div>
+            <div class="card">
+                <h3>Physics ⚡</h3>
+                <p>Move like characters or objects using speed, high jump, or float abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section id="guide">
+        <h2>Official CattyRun Guide</h2>
+        <p>Click the button below to open the full kid-friendly guide with all rules, mods, shop tips, and more!</p>
+        <a href="https://midnight-saga-a2d.notion.site/Official-CattyRun-Guide-27860978a08680bf9aa7e58d375801b6" target="_blank" class="btn">Open Guide</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Noahscratch493 | All rights reserved
+    </footer>
+
+</body>
+</html>
